@@ -1,8 +1,9 @@
-// Colors
-$primary-color: #1c0d3f;
-$secondary-color: #ed26b7;
-$btn-text-color: #ffffff;
-$hero-bg-color: #d1d7e8;
-$footer-bg-color: #f2f4f6;
+// Main
 
-// Typography
+html,
+body {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: $global-font-family;
+}

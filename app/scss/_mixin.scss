@@ -1,0 +1,8 @@
+// mixins
+
+// Text style - size, weight, line height
+@mixin text-style($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}

@@ -1,0 +1,14 @@
+// Buttons
+
+.btn {
+  background-color: $secondary-color;
+  color: $btn-text-color;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+}

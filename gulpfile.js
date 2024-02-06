@@ -7,7 +7,7 @@ const browsersync = require("browser-sync").create();
 
 // sass task
 function scssTask() {
-  return src("app/scss/style.scss", { sourcemaps: true })
+  return src("app/scss/main.scss", { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([cssnano()])) // Added parentheses to invoke cssnano
     .pipe(dest("dist", { sourcemaps: "." }));
