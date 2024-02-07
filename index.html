@@ -44,11 +44,98 @@
       </div>
     </header>
 
-    <main class="main hero--bg container">
-      <div class="main--tags">
-        <a href="#" class="link"> </a>
+    <main id="main">
+      <div class="main__hero">
+        <div class="hero__section container">
+          <div class="main__links">
+            <div class="main__resources tag__nav">
+              <a href="#" class="resources__link tag__form__text link"
+                >Resources</a
+              >
+            </div>
+            <div class="main__tags tag__nav">
+              <span class="tag__form__text tag__text">tags: </span>
+              <span class="tag__form__text tag"
+                ><a href="#" class="tag__link link">Daas</a></span
+              >
+            </div>
+          </div>
+          <div class="webinar__image">
+            <img class="card__img__mobile" src="/img/ebook-webinar.webp" />
+          </div>
+
+          <div class="hero__content">
+            <div class="hero__text">
+              <div class="hero__category">
+                <h4 class="hero__h4">
+                  <a href="#" class="category__link link">E-BOOK</a>
+                </h4>
+              </div>
+              <div class="hero__heading">
+                <h1 class="hero__h1">
+                  GoodData for Freshdesk: Empowering today's customer support
+                  champions with advanced analytics
+                </h1>
+              </div>
+            </div>
+
+            <div class="hero__registration">
+              <div class="card__registration">
+                <div class="card__img">
+                  <img class="card__ebook" src="/img/ebook-webinar.webp" />
+                </div>
+                <div class="card__content">
+                  <h4 class="card__h4">Webinar registration</h4>
+
+                  <form class="form_registration">
+                    <input
+                      class="input__fname form__input"
+                      name="firstname"
+                      placeholder="First Name"
+                      type="text"
+                    />
+                    <input
+                      class="input__lname form__input"
+                      name="lastname"
+                      placeholder="Last Name"
+                      type="text"
+                    />
+                    <input
+                      class="input__email form__input"
+                      name="email"
+                      placeholder="Business email address"
+                      type="email"
+                    />
+
+                    <input
+                      class="card__checkbox"
+                      name="consent"
+                      type="checkbox"
+                    />
+                    <label for="legal_consent" class="card__checkbox__text"
+                      >I agree that GoodData may contact me regarding products &
+                      promotions.
+                    </label>
+                  </form>
+                  <span class="card__text">
+                    We collect your personal information here to be able to
+                    identify and contact you. Learn more in our Privacy Policy
+                    or contact us at
+                    <a
+                      href="mailto:privacy@gooddata.com"
+                      class="privacy__mail link"
+                    >
+                      privacy@gooddata.com</a
+                    >.
+                  </span>
+                  <button class="btn card__btn">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <script src="index.js"></script>
+    <script src="dist/script.js"></script>
   </body>
 </html>

@@ -3,24 +3,48 @@ $global-font-family: Arial, Helvetica;
 
 // Headings
 
-// register form p - 1.4rem, 400, 2.1rem
-
 h1 {
   @include text-style(5.2rem, 400, 6.5rem);
+  color: $primary-color;
 }
 
 h2 {
   @include text-style(3.2rem, 600, 4rem);
+  color: $primary-color;
 }
 
 h3 {
   @include text-style(2.6rem, 400, 4rem);
+  color: $primary-color;
 }
 
 h4 {
   @include text-style(2.1rem, 600, 2.6rem);
+  color: $primary-color;
 }
 
 p {
   @include text-style(1.8rem, 400, 2.7rem);
+  color: $primary-color;
+}
+
+.header__btn {
+  @include text-style(1.8rem, 600, 2.2rem);
+}
+
+.tag__form__text,
+.card__checkbox__text,
+.card__text {
+  @include text-style(1.4rem, 400, 2.1rem);
+}
+
+.form__input {
+  @include text-style(1.6rem, 400, 2.4rem);
+  &::placeholder {
+    opacity: 0.6;
+  }
+}
+
+.card__btn {
+  @include text-style(2.1rem, 600, 3.15rem);
 }

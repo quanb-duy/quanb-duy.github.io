@@ -25,7 +25,6 @@
       @include text-style(1.8rem, 600, 2.2rem);
 
       .nav__link {
-        text-decoration: none;
         color: $primary-color;
         transition: 0.15s ease-in-out;
         align-items: stretch;
@@ -55,10 +54,4 @@
       }
     }
   }
-}
-
-.header__btn {
-  @include text-style(1.8rem, 600, 2.2rem);
-  padding: 1rem 1.8rem;
-  border-radius: 63px;
 }
