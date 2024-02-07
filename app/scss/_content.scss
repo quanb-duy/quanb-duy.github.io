@@ -1,0 +1,10 @@
+// main content of the website
+
+.main__content {
+  max-width: 60%;
+  padding: 8rem 0;
+
+  @media screen and (max-width: 991px) {
+    max-width: 100%;
+  }
+}
