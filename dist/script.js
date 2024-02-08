@@ -1,2 +1,2 @@
-const header=document.querySelector(".header"),navList=document.querySelector(".navigation__list");
+const main=document.getElementById("main"),header=document.querySelector(".header"),navList=document.querySelector(".navigation__list");window.addEventListener("scroll",(function(){window.scrollY>0?header.classList.add("sticky__header"):header.classList.remove("sticky__header")}));
 //# sourceMappingURL=script.js.map

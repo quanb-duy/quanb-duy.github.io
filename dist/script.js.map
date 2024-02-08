@@ -1,1 +1,1 @@
-{"version":3,"file":"script.js","names":["header","document","querySelector","navList"],"sources":["script.js"],"mappings":"AAEA,MAAMA,OAASC,SAASC,cAAc,WAChCC,QAAUF,SAASC,cAAc"}
+{"version":3,"file":"script.js","names":["main","document","getElementById","header","querySelector","navList","window","addEventListener","scrollY","classList","add","remove"],"sources":["script.js"],"mappings":"AAEA,MAAMA,KAAOC,SAASC,eAAe,QAC/BC,OAASF,SAASG,cAAc,WAChCC,QAAUJ,SAASG,cAAc,qBAGvCE,OAAOC,iBAAiB,UAAU,WACtBD,OAAOE,QACT,EACNL,OAAOM,UAAUC,IAAI,kBAErBP,OAAOM,UAAUE,OAAO,iBAE5B"}
