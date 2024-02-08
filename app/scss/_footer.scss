@@ -38,18 +38,46 @@
   }
   .reference__logos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 
-    .logo__calpine {
-      @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+    .logo__img {
+      width: 190px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (max-width: 767px) {
+        margin: 0 1rem;
+        transform: scale(0.6);
+        width: 80px;
+      }
+
+      .logo {
+        opacity: 0.4;
+      }
+    }
+    .wrap__calpine {
+      @media screen and (max-width: 991px) {
         display: none;
       }
     }
 
-    /*     .logo__doubleverify {
-      @media screen and (max-width: 1200px) {
+    .wrap__doubleverify {
+      @media screen and (max-width: 767px) {
         display: none;
-      } 
-    }*/
+      }
+    }
+
+    .wrap__freshworks {
+      @media screen and (max-width: 767px) {
+        order: 2;
+      }
+    }
   }
 }
