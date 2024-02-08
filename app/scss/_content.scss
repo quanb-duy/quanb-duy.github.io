@@ -11,3 +11,13 @@
     margin: 8rem 0;
   }
 }
+
+.content2__span {
+  display: flex;
+
+  .checkmark {
+    transform: scale(0.9);
+    padding-right: 1rem;
+    align-self: flex-start;
+  }
+}

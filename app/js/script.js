@@ -1,9 +1,5 @@
-// header hamburger menu - Define variables
-
-const main = document.getElementById("main");
 const header = document.querySelector(".header");
-const navList = document.querySelector(".navigation__list");
-
+const hamburgerIcon = document.querySelector(".hamburger__menu");
 // sticky header - change bg color
 window.addEventListener("scroll", function () {
   const y = window.scrollY;
@@ -11,5 +7,17 @@ window.addEventListener("scroll", function () {
     header.classList.add("sticky__header");
   } else {
     header.classList.remove("sticky__header");
+  }
+});
+
+// hamburger menu
+hamburgerIcon.addEventListener("click", function () {
+  document.body.classList.toggle("hamburger--active");
+});
+
+document.addEventListener("keydown", function (e) {
+  console.log(e.key);
+  if (e.key === "Escape") {
+    document.body.classList.toggle("hamburger--active");
   }
 });

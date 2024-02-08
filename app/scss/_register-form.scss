@@ -58,6 +58,12 @@
 
     .card__checkbox__text {
       color: $primary-color;
+      display: flex;
+      align-items: flex-start;
+
+      .checkmark__form {
+        order: 1;
+      }
     }
 
     .card__text {

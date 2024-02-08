@@ -11,42 +11,38 @@
     <link rel="stylesheet" href="dist/main.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
-  <body>
-    <header class="header header--top sticky__header">
+  <body id="body">
+    <header class="header header--top">
       <div class="header__container container">
         <div class="header__img">
-          <a href="#"
-            ><img class="header__logo" src="img/GoodData Logo.svg" alt="logo"
-          /></a>
+          <div class="logo__section">
+            <a href="#"
+              ><img class="header__logo" src="img/GoodData Logo.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="hamburger__menu"></div>
         </div>
         <nav class="navigation nav__hidden">
           <ul class="navigation__list">
             <li class="nav__item">
               <a class="nav__link link" href="#">Product</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item hamburger__item">
               <a class="nav__link link" href="#">Solutions</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item hamburger__item">
               <a class="nav__link link" href="#">Pricing</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item hamburger__item">
               <a class="nav__link link" href="#">Resources</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item hamburger__item">
               <a class="nav__link link" href="#">Company</a>
             </li>
           </ul>
         </nav>
         <div class="header--btn nav__hidden">
           <a href="#" class="btn header__btn">Get a demo</a>
-        </div>
-        <div class="hamburger__menu">
-          <img
-            class="hamburger__img"
-            src="img/Hamburger-menu.svg"
-            alt="hamburger-icon"
-          />
         </div>
       </div>
     </header>
@@ -57,8 +53,17 @@
           <div class="main__links">
             <div class="main__resources tag__nav">
               <a href="#" class="resources__link tag__form__text link"
-                >Resources</a
+                ><img
+                  src="img/arrow-left-pink-thin.svg"
+                  class="arrow__icon"
+                  alt="arrow-left"
+                />Resources</a
               >
+              <img
+                src="img/separator-line.svg"
+                class="line"
+                alt="separator-line"
+              />
             </div>
             <div class="main__tags tag__nav">
               <span class="tag__form__text tag__text">tags: </span>
@@ -122,9 +127,11 @@
                       type="email"
                     />
 
-                    <label for="legal_consent" class="card__checkbox__text"
-                      >I agree that GoodData may contact me regarding products &
-                      promotions.
+                    <label for="legal_consent" class="card__checkbox__text">
+                      <span class="checkmark__form">
+                        I agree that GoodData may contact me regarding products
+                        & promotions.</span
+                      >
                       <input
                         class="card__checkbox"
                         name="consent"
@@ -167,17 +174,29 @@
           <div class="content__2 content">
             <h2 class="content2__h2">Headline starting the description</h2>
             <p class="content2__p">
-              <span class="content2__span"
-                >The concepts of data storytelling; whether you are building
+              <span class="content2__span">
+                <img
+                  src="img/Check-list.svg"
+                  class="checkmark"
+                  alt="checkmark"
+                />The concepts of data storytelling; whether you are building
                 dashboards or individual visualizations.</span
               >
-              <br /><br />
-              <span class="content2__span"
-                >How to design dashboards and use the right visualizations to
+              <br />
+              <span class="content2__span">
+                <img
+                  src="img/Check-list.svg"
+                  class="checkmark"
+                  alt="checkmark"
+                />How to design dashboards and use the right visualizations to
                 help end users understand the data.</span
-              ><br /><br />
-              <span class="content2__span"
-                >How to build an efficient, user-friendly analytics experience
+              ><br />
+              <span class="content2__span">
+                <img
+                  src="img/Check-list.svg"
+                  class="checkmark"
+                  alt="checkmark"
+                />How to build an efficient, user-friendly analytics experience
                 into your software product, application, or web portal.</span
               >
             </p>
@@ -206,34 +225,34 @@
                   alt="Zalando logo"
                 />
               </div>
-              <div class="logo__img wrap__freshworks">
+              <a href="#" class="logo__img wrap__freshworks">
                 <img
                   class="logo logo__freshworks"
                   src="img/trustedBy/Freshworks.svg"
                   alt="Freshworks logo"
                 />
-              </div>
-              <div class="logo__img wrap__visa">
+              </a>
+              <a href="#" class="logo__img wrap__visa">
                 <img
                   class="logo logo__visa"
                   src="img/trustedBy/Visa.svg"
                   alt="Visa logo"
                 />
-              </div>
-              <div class="logo__img wrap__doubleverify">
+              </a>
+              <a href="#" class="logo__img wrap__doubleverify">
                 <img
                   class="logo logo__doubleverify"
                   src="img/trustedBy/DoubleVerify.svg"
                   alt="DoubleVerify logo"
                 />
-              </div>
-              <div class="logo__img wrap__calpine">
+              </a>
+              <a href="#" class="logo__img wrap__calpine">
                 <img
                   class="logo logo__calpine"
                   src="img/trustedBy/Calpine.svg"
                   alt="Calpine logo"
                 />
-              </div>
+              </a>
             </div>
           </div>
         </div>

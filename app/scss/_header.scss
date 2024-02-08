@@ -17,7 +17,15 @@
     height: 8.8rem;
     padding: 0 1.6rem;
     position: sticky;
+    .header__img {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+    }
     .navigation__list {
       list-style: none;
       display: flex;
@@ -35,23 +43,24 @@
           line-height: 8.8rem;
           display: flex;
           padding: 0 1.6rem;
-
-          &::before {
-            content: "";
-            position: absolute;
-            opacity: 0;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background-color: $secondary-color;
-            transition: opacity 0.15s ease-in-out;
-          }
-          &:hover {
-            color: $nav-text-hover;
-
+          @media screen and (min-width: 991px) {
             &::before {
-              opacity: 1;
+              content: "";
+              position: absolute;
+              opacity: 0;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 3px;
+              background-color: $secondary-color;
+              transition: opacity 0.15s ease-in-out;
+            }
+            &:hover {
+              color: $nav-text-hover;
+
+              &::before {
+                opacity: 1;
+              }
             }
           }
         }
@@ -59,25 +68,9 @@
     }
   }
 }
-// Mobile
-
-.hamburger__menu {
-  display: none;
-
-  @media screen and (max-width: 991px) {
-    display: block;
-  }
-}
 
 .nav__hidden {
   @media screen and (max-width: 991px) {
     display: none;
-  }
-}
-
-.hamburger__on {
-  .navigation__list {
-    display: flex;
-    flex-direction: column;
   }
 }
