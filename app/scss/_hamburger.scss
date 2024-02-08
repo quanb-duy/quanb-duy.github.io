@@ -32,9 +32,16 @@
         align-items: flex-start;
         padding: 0;
 
+        .header__img {
+          flex: 0 0 8.8rem;
+          @media screen and (max-width: 768px) {
+            width: calc(100% - (2 * $header-side-padding));
+          }
+          margin: 0 auto;
+        }
+
         .logo__section {
-          margin-top: 3rem;
-          margin-left: 1.5rem;
+          margin: auto 0;
         }
         .hamburger__menu::before {
           background-image: url("../img/cross.svg");
