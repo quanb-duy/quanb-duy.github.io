@@ -6,3 +6,8 @@
   font-weight: $weight;
   line-height: $line-height;
 }
+
+@mixin button-style {
+  padding: 1.1rem 2.8rem 1.3rem 2.8rem;
+  border-radius: 69px;
+}

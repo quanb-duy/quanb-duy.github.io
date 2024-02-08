@@ -1,7 +1,5 @@
 // Header
 
-// Mobile
-
 // Desktop
 .header--top {
   background-color: $hero-bg-color;
@@ -53,5 +51,28 @@
         }
       }
     }
+  }
+}
+
+// Mobile
+
+.hamburger__menu {
+  display: none;
+
+  @media screen and (max-width: 991px) {
+    display: block;
+  }
+}
+
+.nav__hidden {
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.hamburger__on {
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
   }
 }

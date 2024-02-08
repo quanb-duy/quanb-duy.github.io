@@ -19,6 +19,12 @@
 }
 
 .card__btn {
-  padding: 1.1rem 2.8rem 1.3rem 2.8rem;
-  border-radius: 69px;
+  @include button-style;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.cta__btn {
+  @include button-style;
 }

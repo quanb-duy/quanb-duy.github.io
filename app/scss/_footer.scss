@@ -1,0 +1,55 @@
+.cta--container {
+  background-color: $footer-bg-color;
+
+  .cta__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8rem 0;
+
+    .cta__h1 {
+      margin: 0;
+    }
+    .cta__h3 {
+      margin-top: 2rem;
+    }
+
+    .cta__btn {
+      margin-top: 5rem;
+
+      @media screen and (min-width: 295px) and (max-width: 769px) {
+        padding-left: 7rem;
+        padding-right: 7rem;
+      }
+      @media screen and (max-width: 294px) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+    }
+  }
+}
+
+.reference {
+  padding-bottom: 3rem;
+
+  .reference__text {
+    text-align: center;
+  }
+  .reference__logos {
+    display: flex;
+    justify-content: center;
+
+    .logo__calpine {
+      @media screen and (max-width: 1400px) {
+        display: none;
+      }
+    }
+
+    .logo__doubleverify {
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+}

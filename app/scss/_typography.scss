@@ -45,6 +45,7 @@ p {
   }
 }
 
-.card__btn {
+.card__btn,
+.cta__btn {
   @include text-style(2.1rem, 600, 3.15rem);
 }
