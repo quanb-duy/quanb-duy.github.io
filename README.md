@@ -4,7 +4,7 @@ This project is a resource page created as part of the interview process for Goo
 Features
 Hamburger Menu:
 The navigation menu is accessible via a hamburger icon.
-Clicking the icon reveals a full-screen menu with links to different sections of the page.
+Clicking the icon reveals a full-screen menu.
 
 Responsive Design:
 The entire page layout adapts to different screen sizes (mobile, tablet, desktop).
@@ -12,19 +12,19 @@ Media queries ensure optimal display across devices.
 
 Sticky Header:
 As the user scrolls down, the header remains fixed at the top of the viewport.
-The background color of the header changes upon initial scroll.
+The background color of the header changes upon the scroll and gets back its original color at the top of the page.
 
 SCSS Organization:
   SCSS files are organized into separate partials for better maintainability:
     _buttons.scss: Styles for buttons
     _colors.scss: Color variables
-    _content.scss: Content-specific styles
+    _content.scss: Main text content on website
     _footer.scss: Footer styles
-    _global_settings.scss: Global settings (e.g., font families, base styles)
+    _global_settings.scss: Global settings such as the width of main container
     _header.scss: Header styles
     _hero.scss: Hero section styles
     _mixin.scss: Reusable mixins
-    _register-form.scss: Styles for registration form
+    _register-form.scss: Card with a registration form for a webinar 
     _typography.scss: Typography rules
   All these partials are imported into main.scss.
   
